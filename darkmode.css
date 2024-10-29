@@ -24,7 +24,7 @@
 }
 
 .dark-mode #modeIcon {
-    content: url('../imgs/moon.svg');
+    content: url('imgs/moon.svg');
 }
 
 .dark-mode .main-content {
