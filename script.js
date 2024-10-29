@@ -5,9 +5,9 @@ function toggleMenu() {
   navbar.classList.toggle("active");
 
   if (navbar.classList.contains("active")) {
-    menuIcon.setAttribute("src", "../imgs/x.png");
+    menuIcon.setAttribute("src", "imgs/x.png");
   } else {
-    menuIcon.setAttribute("src", "../imgs/list-menu.png");
+    menuIcon.setAttribute("src", "imgs/list-menu.png");
   }
 }
 // Menu List
@@ -18,10 +18,10 @@ const modeIcon = document.getElementById("modeIcon");
 function toggleDarkMode() {
   if (document.body.className === "dark-mode") {
     document.body.className = "";
-    modeIcon.src = "../imgs/brightness-high.svg";
+    modeIcon.src = "imgs/brightness-high.svg";
   } else {
     document.body.className = "dark-mode";
-    modeIcon.src = "../imgs/moon.svg";
+    modeIcon.src = "imgs/moon.svg";
   }
 }
 toggleMode.onclick = toggleDarkMode;
