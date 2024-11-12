@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="company.css"/>
+    <link rel="stylesheet" href="/responsive.css"/>
+    <link rel="stylesheet" href="/darkmode.css"/>
+    <title>Política de Privacidade</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="header-content">
+            <section class="hiddenY navigation">
+                <a href="/index.html"><img src="/imgs/Brand.png" class="logo" /></a>
+                <div class="toggle-mode" id="toggleMode">
+                    <div class="toggle-container">
+                        <div class="toggle-circle" id="toggleCircle">
+                            <img src="/imgs/brightness-high.svg" alt="Modo Claro" class="toggle-icon" id="modeIcon" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </header>
+    <section class="privacypolice">
+        <h2>Política de Privacidade</h2>
+        <p>
+            A sua privacidade é importante para nós. É política do Aventur
+            respeitar
+            a sua privacidade em relação a qualquer informação sua que possamos
+            coletar no site <a href="/index.html">Aventur</a>, e outros sites que possuímos e operamos.
+        </p>
+        <p>Solicitamos
+            informações pessoais apenas quando realmente precisamos delas para
+            lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu
+            conhecimento e consentimento. Também informamos por que estamos
+            coletando e como será usado.
+        </p>
+        <p>Apenas retemos as informações
+            coletadas pelo tempo necessário para fornecer o serviço solicitado.
+            Quando armazenamos dados, protegemos dentro de meios comercialmente
+            aceitáveis ​​para evitar perdas e roubos, bem como acesso,
+            divulgação,
+            cópia, uso ou modificação não autorizados.
+        </p>
+        <p>Não compartilhamos
+            informações de identificação pessoal publicamente ou com terceiros,
+            exceto quando exigido por lei.
+        </p>
+        <p>O nosso site pode ter links para
+            sites externos que não são operados por nós. Esteja ciente de que
+            não temos controle sobre o conteúdo e práticas desses sites e não
+            podemos aceitar responsabilidade por suas respectivas
+            <a href='https://privacidade.me/' target='_BLANK' style='color: #616060;text-decoration: none;'>políticas de
+                privacidade</a>.
+        </p>
+        <p>
+            Você é livre para recusar a nossa solicitação de informações
+            pessoais, entendendo que talvez não possamos fornecer alguns dos
+            serviços desejados.
+        </p>
+        <p>O uso continuado de nosso site será
+            considerado como aceitação de nossas práticas em torno de
+            privacidade e informações pessoais. Se você tiver alguma dúvida
+            sobre como lidamos com dados do usuário e informações pessoais,
+            entre em contato conosco.
+        </p>
+
+        <h2>Segurança e Confiança do site Aventur</h2>
+        <p>
+            O site é confiável e seguro para navegação do usuário conforme
+            informado pela <a target='_BLANK' style='color: #616060;text-decoration: none;' href="/index.html"
+                rel='noopener noreferrer'>Verificação</a>. A página verifica
+            informações do site para identificar possíveis problemas de segurança. A
+            navegação verificada pela ferramenta <a target='_BLANK' style='color: #616060;text-decoration: none;'
+                href='https://transparencyreport.google.com/safe-browsing/search?url=https://diogobercocano.github.io/Aventur/'
+                rel='noopener noreferrer'>segurança do Google</a>
+            mostra que o site é seguro.
+        </p>
+
+        <h2>Política de Cookies Aventur</h2>
+        <h3>O que são cookies?</h3>
+        <p>
+            Como é prática comum em quase todos os sites profissionais, este
+            site usa cookies, que são pequenos arquivos baixados no seu computador, para
+            melhorar sua experiência. Esta página descreve quais informações
+            eles coletam, como as usamos e por que às vezes precisamos armazenar
+            esses cookies. Também compartilharemos como você pode impedir que esses
+            Cookies sejam armazenados, no entanto, isso pode fazer o downgrade ou 'quebrar'
+            certos elementos da funcionalidade do site.
+        </p>
+    </section>
+    <footer>
+        <p>© 2024 Todos os direitos reservados</p>
+    </footer>
+    <script>
+        const toggleMode = document.getElementById("toggleMode");
+        const modeIcon = document.getElementById("modeIcon");
+
+        function toggleDarkMode() {
+        if (document.body.className === "dark-mode") {
+            document.body.className = "";
+            modeIcon.src = "/imgs/brightness-high.svg";
+        } else {
+            document.body.className = "dark-mode";
+            modeIcon.src = "/imgs/moon.svg";
+        }
+        }
+        toggleMode.onclick = toggleDarkMode;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+@media (max-width: 768px) {
+  .logo {
+    width: 60px;
+  }
+
+  .navbar {
+    font-size: 1rem;
+  }
+
+  .toggle-container {
+    width: 55px;
+    height: 25px;
+  }
+
+  .toggle-circle {
+    width: 22px;
+    height: 22px;
+  }
+
+  .content-card {
+    margin-top: 250px;
+    max-width: 500px;
+    padding: 10px;
+  }
+
+  .content-card p {
+    font-size: 1rem;
+  }
+
+  .content-card .btn {
+    font-size: 1rem;
+  }
+
+  .carousel {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .slide .item:nth-child(3) {
+    left: calc(50% + 180px);
+  }
+
+  .slide .item:nth-child(4),
+  .slide .item:nth-child(5),
+  .slide .item:nth-child(6) {
+    display: none;
+  }
+
+  .item .content {
+    left: 50px;
+    width: 200px;
+  }
+
+  .content .name {
+    font-size: 30px;
+  }
+
+  .content .des {
+    font-size: 14px;
+  }
+
+  .tip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-col {
+    padding: 50px;
+  }
+
+  #faq h2 {
+    font-size: 1.6em;
+  }
+
+  #faq li strong {
+    font-size: 1.1em;
+  }
+
+  #faq li p {
+    font-size: 0.95em;
+  }
+
+  #terms h2,
+  #terms h3 {
+    font-size: 1.6em;
+  }
+
+  #privacypolice h2,
+  #privacypolice h3 {
+    font-size: 1.6em;
+  }
+
+  #privacypolice p {
+    font-size: 1em;
+  }
+
+  #privacypolice ul {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .welcome-card {
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .content-card {
+    margin-top: 150px;
+    max-width: 500px;
+    padding: 0;
+  }
+
+  .content-card h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .content-card h2 {
+    font-size: 1.15rem;
+  }
+
+  .content-card p {
+    font-size: 0.8rem;
+  }
+
+  .content-card .btn {
+    font-size: 0.8rem;
+  }
+
+  .carousel {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .slide .item:nth-child(3),
+  .slide .item:nth-child(4),
+  .slide .item:nth-child(5),
+  .slide .item:nth-child(6) {
+    display: none;
+  }
+
+  .item .content {
+    top: 50%;
+    left: 50px;
+    width: 200px;
+  }
+
+  .tip {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 320px;
+  }
+
+  .footer-col {
+    padding: 0;
+  }
+
+  .footer-col ul li a {
+    font-size: 15px;
+  }
+
+  .footer-col .social-links a {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Font Awesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="darkmode.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="scrollAnimation.css" />
+  <title>Aventur</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="header-content">
+      <section class="hiddenY navigation">
+        <a href="index.html"><img src="imgs/Brand.png" class="logo" /></a>
+        <nav class="hiddenY navbar">
+          <a href="#galery">Galeria</a>
+          <a href="#tips">Dicas</a>
+          <a href="#contact">Contato</a>
+        </nav>
+        <div class="toggle-mode" id="toggleMode">
+          <div class="toggle-container">
+            <div class="toggle-circle" id="toggleCircle">
+              <img src="imgs/brightness-high.svg" alt="Modo Claro" class="toggle-icon" id="modeIcon" />
+            </div>
+          </div>
+        </div>
+        <label for class="menu-icon" onclick="toggleMenu()">
+          <img src="imgs/list-menu.png" id="menuIcon" name="menu-alt-right" />
+        </label>
+      </section>
+      <section class="welcome-card">
+        <div class="hiddenX content-card">
+          <h1>
+            VIVA NOVAS<span class="title"> <br/>EXPERIÊNCIAS!</span>
+          </h1>
+          <h2>Desperte o aventureiro dentro de você com a Aventur!</h2>
+          <p>
+            Junte-se a nós em uma jornada emocionante por destinos incríveis.
+            Descubra culturas fascinantes, participe de experiências únicas e
+            crie memórias inesquecíveis.
+          </p>
+          <button class="btn"><a href="#galery">Comece Sua Aventura</a></button>
+        </div>
+      </section>
+    </section>
+  </header>
+  <main class="main-content">
+    <section class="hiddenX places" id="galery">
+      <div class="carousel">
+        <div class="slide">
+          <div class="item" id="italy" style="background-image: url(imgs/italy.jpg)">
+            <div class="content">
+              <div class="name">Itália</div>
+              <div class="des">
+                Mergulhe na paixão pelo automobilismo, com marcas lendárias
+                como Ferrari e Lamborghini e emocionantes corridas em Monza.
+              </div>
+              <button>Veja Mais</button>
+            </div>
+          </div>
+          <div class="item" id="greece" style="background-image: url(imgs/santorini.jpg)">
+            <div class="content">
+              <div class="name">Santorini, Grécia</div>
+              <div class="des">
+                Descubra as deslumbrantes paisagens e o romântico pôr do sol
+                de Santorini.
+              </div>
+              <button>Veja Mais</button>
+            </div>
+          </div>
+          <div class="item" id="dubai" style="background-image: url(imgs/dubai.jpg)">
+            <div class="content">
+              <div class="name">Dubai, Emirados Árabes</div>
+              <div class="des">
+                Mergulhe na modernidade e luxo de Dubai, com suas
+                impressionantes construções e cultura diversificada.
+              </div>
+              <button>Veja Mais</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(imgs/miami.jpg)">
+            <div class="content">
+              <div class="name">Miami, EUA</div>
+              <div class="des">
+                Sinta a energia vibrante de Miami, Florida, a cidade que nunca
+                para.
+              </div>
+              <button>Veja Mais</button>
+            </div>
+          </div>
+          <div class="item" id="disney" style="background-image: url(imgs/disney.jpg)">
+            <div class="content">
+              <div class="name">Disney, EUA</div>
+              <div class="des">
+                Viva a magia e a diversão em Disney, onde os sonhos se tornam
+                realidade.
+              </div>
+              <button>Veja Mais</button>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(imgs/reykjavik.jpg)">
+            <div class="content">
+              <div class="name">Reykjavik, Islândia</div>
+              <div class="des">
+                Explore a natureza selvagem da Islândia, com suas paisagens de
+                tirar o fôlego e geiseres incríveis.
+              </div>
+              <button>Veja Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="toggle-img">
+          <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="hiddenX tips" id="tips">
+      <h1>Dicas de viagens</h1>
+      <div class="tip">
+        <div class="hiddenY">
+          <div class="tip-card avatar">
+            <h2>1. Pesquise Antes de Viajar!</h2>
+            <p>
+              <strong class="description">Por que?</strong> Conhecer a
+              cultura, os costumes e as melhores épocas para visitar seu
+              destino pode transformar sua experiência.
+            </p>
+            <p>
+              <strong class="description">Dica:</strong> Crie uma lista das
+              atrações imperdíveis e esteja preparado para descobrir o que o
+              local tem a oferecer!
+            </p>
+          </div>
+        </div>
+        <div class="hiddenY">
+          <div class="tip-card avatar">
+            <div class="content">
+              <h2>2. Monte um Roteiro Flexível!</h2>
+              <p>
+                <strong class="description">Por que?</strong> Um plano bem
+                estruturado é ótimo, mas a magia das viagens muitas vezes está
+                nas surpresas.
+              </p>
+              <p>
+                <strong class="description">Dica:</strong> Reserve tempo para
+                explorar novas recomendações e seguir o fluxo. Às vezes, o
+                melhor acontece quando você se permite ser espontâneo!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hiddenY">
+          <div class="tip-card avatar">
+            <h2>3. Use a Tecnologia a Seu Favor!</h2>
+            <p>
+              <strong class="description">Por que?</strong> Aplicativos podem
+              ser seus melhores amigos em uma nova cidade.
+            </p>
+            <p>
+              <strong class="description">Dica:</strong> Baixe apps de
+              navegação, tradução e dicas de restaurantes. Com isso, você se
+              sente mais seguro e pode se concentrar em aproveitar cada
+              momento!
+            </p>
+          </div>
+        </div>
+        <div class="hiddenY">
+          <div class="tip-card avatar">
+            <h2>4. Prepare-se para o Imprevisto!</h2>
+            <p>
+              <strong class="description">Por que?</strong> Mudanças de plano
+              são comuns em viagens e podem ser uma fonte de estresse.
+            </p>
+            <p>
+              <strong class="description">Dica:</strong> Tenha um plano B
+              sempre à mão! Se algo não sair como esperado, use isso como uma
+              oportunidade para explorar algo novo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="hiddenX" id="contact">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h2>Empresa</h2>
+            <ul>
+              <li><a href="footerlink/FAQ.html" target="_blank">FAQ</a></li>
+              <li>
+                <a href="footerlink/terms.html" target="_blank">Termos de Uso</a>
+              </li>
+              <li>
+                <a href="footerlink/privacypolice.html" target="_blank">Política de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h2>Fique por dentro!</h2>
+            <form>
+              <input type="tel" name="telefone" placeholder="Seu telefone" required><br>
+              <input type="email" name="email" placeholder="Seu e-mail" required><br>
+              <button class="btn">Cadastrar</button>
+            </form>
+          </div>
+          <div class="footer-col">
+            <h2>Siga-Nos</h2>
+            <div class="social-links">
+              <div class="hiddenY">
+                <a class="icon" href="https://www.facebook.com/?locale=pt_BR">
+                  <i class="fab fa-facebook-f"></i></a>
+              </div>
+              <div class="hiddenY">
+                <a class="icon" href="https://x.com/?lang=pt-br">
+                  <i class="fab fa-twitter"></i></a>
+              </div>
+              <div class="hiddenY">
+                <a class="icon" href="https://www.instagram.com/ud1oguinhu/">
+                  <i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="hiddenY">
+                <a class="icon" 
+                  href="https://www.linkedin.com/onboarding/start/profile-location/new/">
+                  <i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

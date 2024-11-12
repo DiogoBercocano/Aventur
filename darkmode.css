@@ -1,0 +1,100 @@
+.dark-mode {
+  background: #24262b;
+  color: #e0e0e0;
+}
+
+.dark-mode .header-container {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(9, 0, 77, 0.2),
+    rgba(9, 0, 77, 0.2),
+    rgba(9, 0, 77, 0.5),
+    rgba(9, 0, 77, 0.3)
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+.dark-mode .toggle-container {
+  background: #222;
+}
+
+.dark-mode .toggle-circle {
+  transform: translateX(30px);
+  background: #000;
+}
+
+.dark-mode #modeIcon {
+  content: url("imgs/moon.svg");
+}
+
+.dark-mode .main-content {
+  width: 100%;
+  background: #24262b;
+}
+
+.dark-mode .carousel {
+  box-shadow: 10px 10px 10px #222;
+}
+
+.dark-mode .carousel .slide .item {
+  box-shadow: 10px 10px 10px #000;
+}
+
+.dark-mode .tips {
+  background: #222;
+  box-shadow: 10px 10px 10px #000;
+}
+
+.dark-mode .tip-card {
+  background: #24262b;
+  text-align: justify;
+}
+
+.dark-mode .tip-card:hover {
+  background: #e86bae37;
+}
+
+.dark-mode .footer {
+  background: #222;
+}
+
+.dark-mode .faq {
+  background: #222;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.dark-mode .faq-item {
+  background: #222;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.dark-mode .faq-item strong {
+  color: #fff;
+}
+
+.dark-mode .faq-item p {
+  color: #ddd;
+}
+
+.dark-mode .privacypolice {
+  background: #222;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.dark-mode .privacypolice p {
+  color: #fff;
+}
+
+.dark-mode .terms {
+  background: #222;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.dark-mode .terms ol li {
+  color: #ddd;
+}
+
+.dark-mode .terms p {
+  color: #fff;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="company.css" />
+  <link rel="stylesheet" href="/responsive.css" />
+  <link rel="stylesheet" href="/darkmode.css" />
+  <title>FAQ - Perguntas Frequentes</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="header-content">
+      <section class="hiddenY navigation">
+        <a href="/index.html"><img src="/imgs/Brand.png" class="logo" /></a>
+        <div class="toggle-mode" id="toggleMode">
+          <div class="toggle-container">
+            <div class="toggle-circle" id="toggleCircle">
+              <img src="/imgs/brightness-high.svg" alt="Modo Claro" class="toggle-icon" id="modeIcon" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </header>
+  <section class="faq">
+    <h2>Perguntas Frequentes (FAQ)</h2>
+    <ul>
+      <li class="faq-item">
+        <strong>1. O que é o Aventur?</strong>
+        <p>O Aventur é uma plataforma de entretenimento que oferece experiências exclusivas, conteúdo de alta qualidade
+          e produtos de luxo em destinos de viagem, cultura e lazer. Ele conecta pessoas que buscam uma nova forma de
+          viver e experimentar o mundo ao seu redor.</p>
+      </li>
+      <li class="faq-item">
+        <strong>2. Como faço para me cadastrar no site?</strong>
+        <p>Para se cadastrar, basta clicar em "Cadastre-se" no canto superior direito da página inicial e preencher o
+          formulário com seus dados pessoais. Após o cadastro, você terá acesso a conteúdos exclusivos.</p>
+      </li>
+      <li class="faq-item">
+        <strong>3. O que está incluído na minha assinatura?</strong>
+        <p>A assinatura inclui acesso ilimitado a todos os conteúdos premium disponíveis no site, bem como descontos
+          exclusivos em produtos e experiências selecionadas.</p>
+      </li>
+      <li class="faq-item">
+        <strong>4. Como posso cancelar minha conta?</strong>
+        <p>Se você deseja cancelar sua conta, basta acessar as configurações da conta e clicar na opção "Cancelar
+          Conta". Você também pode entrar em contato com nosso suporte para mais informações.</p>
+      </li>
+      <li class="faq-item">
+        <strong>5. Como funciona a política de reembolso?</strong>
+        <p>A nossa política de reembolso está disponível na seção "Política de Privacidade". De modo geral, oferecemos
+          reembolsos para casos específicos, conforme detalhado em nossas políticas de cancelamento e devolução.</p>
+      </li>
+      <li class="faq-item">
+        <strong>6. Quais formas de pagamento o Aventur aceita?</strong>
+        <p>O Aventur aceita diversos métodos de pagamento, incluindo cartões de crédito, transferências bancárias e
+          carteiras digitais como PayPal e Apple Pay.</p>
+      </li>
+      <li class="faq-item">
+        <strong>7. Posso acessar o Aventur em dispositivos móveis?</strong>
+        <p>Sim, o Aventur é totalmente compatível com dispositivos móveis. Você pode acessar o conteúdo via browser em
+          seu smartphone, tablet ou outro dispositivo portátil.</p>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <p>© 2024 Todos os direitos reservados</p>
+  </footer>
+  <script>
+    const toggleMode = document.getElementById("toggleMode");
+    const modeIcon = document.getElementById("modeIcon");
+
+    function toggleDarkMode() {
+      if (document.body.className === "dark-mode") {
+        document.body.className = "";
+        modeIcon.src = "/imgs/brightness-high.svg";
+      } else {
+        document.body.className = "dark-mode";
+        modeIcon.src = "/imgs/moon.svg";
+      }
+    }
+    toggleMode.onclick = toggleDarkMode;
+
+    const faqItems = document.querySelectorAll(".faq-item");
+    faqItems.forEach((content) => {
+      content.querySelector("strong").addEventListener("click", () => {
+        content.classList.toggle("active");
+      });
+    });
+
+  </script>
+</body>
+
+</html>

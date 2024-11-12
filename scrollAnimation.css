@@ -1,0 +1,63 @@
+.hiddenX {
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 1s;
+  transform: translateX(-50%);
+  flex: 1;
+}
+
+.showX {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1s;
+  transform: translateX(0);
+  animation-delay: 0.2s;
+}
+
+.hiddenY {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateY(-50%);
+  flex: 1;
+}
+
+.showY {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1s;
+  transform: translateY(0);
+  animation-delay: 0.2s;
+}
+
+.tip :nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.tip :nth-child(3) {
+  transition-delay: 700ms;
+}
+
+.tip :nth-child(4) {
+  transition-delay: 1000ms;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links > .hiddenY:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.social-links > .hiddenY:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.social-links > .hiddenY:nth-child(3) {
+  transition-delay: 700ms;
+}
+
+.social-links > .hiddenY:nth-child(4) {
+  transition-delay: 1000ms;
+}
